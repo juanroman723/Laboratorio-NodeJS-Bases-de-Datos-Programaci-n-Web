@@ -11,9 +11,13 @@ async function listarPersonas(req, res) {
   // TODO (paso 7): consulta con Persona.find(), ordena y usa .lean().
   // Renderiza "personas/index" y envía { titulo: "Listado de personas", personas }.
   // Borra el throw cuando el render esté escrito.
-  throw new Error(
-    'TODO pendiente (paso 7): en src/controllers/personaController.js consulta Persona.find() y haz res.render("personas/index", { titulo, personas }). Elimina este throw.'
-  );
+  
+  const personas = await Persona.find().sort({ apellido: 1, nombre: 1 }).lean();
+
+  res.render("personas/index", {
+    titulo: "Listado de personas",
+    personas: personas,
+  });
 }
 
 module.exports = { listarPersonas };

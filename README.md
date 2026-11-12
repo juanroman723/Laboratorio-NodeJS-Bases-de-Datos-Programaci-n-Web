@@ -1,6 +1,6 @@
 # Laboratorio: conectar MongoDB y listar personas
 
-Estudiantes:Juan José Román Hincapié, Kevin Estivenson Hernández Henao, Juan David García Jiménez 
+Estudiantes: Juan José Román Hincapié, Kevin Estivenson Hernández Henao, Juan David García Jiménez 
 
 Fecha: 12/11/2026
 
